@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="registerstyle.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+
+    <!-------------------Navigation Bar Sidebar---------------------->
+
+    <div class="nav-btn">
+        <nav class="nav1">
+            <div class="menu">
+                <div class="menu1">
+                    <p class="menu-btn">MENU</p>
+                    <i class="bx bx-menu toggle-btn"></i>
+                </div>
+            </div>
+            <ul class="options">
+                <li class="list-itm on">
+                    <a class="link" href="#">
+                        <i class='bx bx-home nav-icon' ></i>
+                        <span class="list-name">Home</span>
+                    </a>
+                </li>
+                <li class="list-itm">
+                    <a class="link" href="#">
+                        <i class='bx bx-support nav-icon'></i>
+                        <span class="list-name">Support</span>
+                    </a>
+                </li>
+                <li class="list-itm">
+                    <a class="link" href="#">
+                        <i class='bx bx-phone nav-icon'></i>
+                        <span class="list-name">Contact</span>
+                    </a>
+                </li>
+                <li class="list-itm">
+                    <a class="link" href="#">
+                        <i class='bx bxs-user-account nav-icon'></i>
+                        <span class="list-name">Login</span>
+                    </a>
+                </li>
+                <li class="list-itm">
+                    <a class="link" href="#">
+                        <i class='bx bx-cog nav-icon'></i>
+                        <span class="list-name">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!------------------- registration form -------------------------->
+    
+    <div class="div1">
+        <form action="">
+            <p class="para">Registration</p>
+                <div class="div3">
+                    <div class="div4">
+                        <input class="sameinput" type="text" placeholder="Full name" id="fullname" required>
+                        <i class='bx bxs-user icon'></i>
+                    </div>
+                    <div class="div4">
+                        <input class="sameinput" type="text" placeholder="Username" id="Username" required>
+                        <i class='bx bxs-user icon'></i>
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="div4">
+                        <input class="sameinput" type="email" placeholder="Email" id="email" required>
+                        <i class='bx bxs-envelope icon' ></i>
+                    </div>
+                    <div class="div4">
+                        <input class="sameinput" type="number" placeholder="Phone number" id="Phonenumber" required>
+                        <i class='bx bxs-phone icon' ></i>
+                    </div>               
+                </div>
+                <div class="div3">
+                    <div class="div4">
+                        <input class="sameinput" type="password" placeholder="Password" id="Password" required>
+                        <i class='bx bxs-lock-alt icon' ></i>
+                    </div>
+                    <div class="div4">
+                        <input class="sameinput" type="password" placeholder="Confirm password" id="Confirm" required>
+                        <i class='bx bxs-lock-alt icon' ></i>
+                    </div>
+                </div>
+            <label><input class="check" type="checkbox" id="check" required>Confirm your Registration by checking the checkbox</label>
+            <button type="submit" class="register">Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
